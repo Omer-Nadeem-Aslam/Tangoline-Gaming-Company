@@ -1,0 +1,1028 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+  overflow-x: hidden;
+  width: 100%;
+}
+.navbar_links{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px black ;
+  transition: all 0.5s;
+  
+}
+.navbar_links:hover{
+  color: aqua;
+}
+.navbar_links:focus{
+  color: aqua;
+}
+
+.drop_box{
+  background: url(./Images/Home/w09415_-_small.webp);
+  background-position: center;
+  background-size: 100% 100%;
+  transition: all 1s;
+  text-shadow: 0px 0px 10px cyan,
+               0px 0px 20px cyan,
+               0px 0px 40px cyan,
+               0px 0px 80px cyan;
+}
+.drop_links{
+  color: white;
+}
+#nav_home{
+  color:  rgb(0, 225, 255);
+  text-shadow: 0px 0px 10px cyan,
+               0px 0px 20px cyan,
+               0px 0px 40px cyan,
+               0px 0px 80px cyan;
+
+}
+#brand{
+  position: relative;
+  font-weight: 1000 ;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 4vh;
+  text-shadow: 0px 0px 10px cyan,
+  0px 0px 20px cyan,
+  0px 0px 40px cyan,
+  0px 0px 80px cyan;
+}
+#brand::before{
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -50%;
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.384), transparent);
+  animation: swipe 3s linear infinite alternate;
+}
+@keyframes swipe {
+  0%{
+    left: -10%;
+  }
+  100%{
+    left: 50%;
+  }
+}
+#parent_nav{
+  height: 10vh;
+  background-image: url(../Images/Home/w09415_-_small.webp);
+  background-position: center;
+  background-size: 400% 400%;
+  animation: moving 5s linear  infinite alternate ;
+  z-index: 1;
+}
+@keyframes moving {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 50% 100%;
+  }
+  100%{
+    background-position: 100% 50%;
+  }
+}
+
+/* ----------------home--------------- */
+#Parent_home{
+  margin: 0;
+  height: 80vh;
+  background: url(./Images/Home/w09415_-_small.webp);
+  box-shadow: 0px 0px 10px black;
+}
+#welcome_tangoline{
+  max-width: 490px;
+  font-weight: 1000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  background: linear-gradient(rgba(128, 128, 128, 0.37), rgba(128, 128, 128, 0.034), cyan);
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: white;
+ 
+animation: homeHeading 2s  ;
+  
+  /* background: url(./Images/Home/w09415_-_small.webp);
+  background-size: 100% 100%;
+  /* -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; */ 
+}
+@keyframes homeHeading {
+  0%{
+    
+    height: 0;
+  }
+  
+  100%{
+    
+    height: 120px;
+  }
+}
+#gamingProduct{
+  width: 400px;
+  height: 700px;
+  background: url(./Images/Home/gaming\ \ products.png);
+  background-position: center;
+  background-size: 100% 100%;
+  animation: homeProduct 10s infinite;
+  position: relative;
+}
+@keyframes homeProduct {
+  0%{
+  
+  }
+
+  
+  25%{
+   
+
+    
+  }
+  50%{
+    
+  }
+  75%{
+    transform: rotateY(360deg);
+    background: url(./Images/Home/all\ types\ of\ games.png);
+    background-position: center;
+    background-size: 100% 100%;
+    
+    
+  }
+  100%{
+   
+    background: url(./Images/Home/gaming\ \ products.png);
+    background-position: center;
+    background-size: 100% 100%;
+   
+  }
+}
+/* --------------Card Section------------------ */
+.cardBody{
+  background: url(./Images/Home/gta\ 5.jpg);
+  background-position: center;
+  background-size: 100% 100%;  
+}
+.cardBody2{
+  background: url(./Images/Home/developer\ \ team.jpg);
+  background-position: center;
+  background-size: 100% 100%;  
+}
+.cardBody3{
+  background: url(./Images/Home/about\ us.jpg);
+  background-position: center;
+  background-size: 100% 100%;  
+}
+.cardBody h5{
+  color: white;
+}
+.cardBody h6{
+  color: white;
+}
+.cardBody hr{
+  color: white;
+}
+.cardBody p{
+  color: rgb(146, 143, 143);
+}
+.cardBody2 h5{
+  color: white;
+}
+.cardBody2 h6{
+  color: white;
+}
+.cardBody2 hr{
+  color: white;
+}
+.cardBody2 p{
+  color: rgb(146, 143, 143);
+}
+.cardBody3 h5{
+  color: white;
+}
+.cardBody3 h6{
+  color: white;
+}
+.cardBody3 hr{
+  color: white;
+}
+.cardBody3 p{
+  color: rgb(146, 143, 143);
+}
+.allGames{
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(gray, white);
+  box-shadow: 0px 0px 10px aqua;
+  color: black;
+  font-weight: 1000;
+  transition: 1s;
+  margin-top: 40px;
+
+}
+.allGames:hover{
+  background: aqua;
+}
+#aboutOurTeam{
+margin-top: 60px;
+}
+.our_games{
+  position: relative;
+  transition: all 0.5s;
+ }
+ @property --angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+ }
+ .our_games::after, .our_games::before{
+  content: '';
+  position: absolute;
+  height: 101%;
+  width: 103%;
+  background-image: conic-gradient(from var(--angle), transparent 70%, cyan , white );
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  translate: -50% -50%;
+  border-radius: 10px;
+  animation: spins 3s linear infinite;
+  
+ }
+ .our_games::before{
+  filter: blur(1.5rem);
+  opacity: 0.5;
+ }
+ @keyframes spins {
+  from{
+    --angle: 0deg;
+  }
+  to{
+    --angle: 360deg;
+    
+  }
+ }
+ /* --------------Card2 Start------------------- */
+ .our_games2{
+   position: relative;
+   transition: all 0.5s;
+  }
+  @property --angle{
+   syntax: "<angle>";
+   initial-value: 0deg;
+   inherits: false;
+  }
+  .our_games2::after, .our_games2::before{
+   content: '';
+   position: absolute;
+   height: 101%;
+   width: 103%;
+   background-image: conic-gradient(from var(--angle), transparent 70%, rgb(22, 44, 141) , white );
+   top: 50%;
+   left: 50%;
+   z-index: -1;
+   translate: -50% -50%;
+   border-radius: 10px;
+   animation: spins 3s linear infinite;
+   
+  }
+  .our_games2::before{
+   filter: blur(1.5rem);
+   opacity: 0.5;
+  }
+  @keyframes spins {
+   from{
+     --angle: 0deg;
+   }
+   to{
+     --angle: 360deg;
+     
+   }
+  }
+ /* --------------Card3 Start------------------- */
+ .our_games3{
+   position: relative;
+   transition: all 0.5s;
+  }
+  @property --angle{
+   syntax: "<angle>";
+   initial-value: 0deg;
+   inherits: false;
+  }
+  .our_games3::after, .our_games3::before{
+   content: '';
+   position: absolute;
+   height: 101%;
+   width: 103%;
+   background-image: conic-gradient(from var(--angle), transparent 70%, rgb(121, 121, 121) , white );
+   top: 50%;
+   left: 50%;
+   z-index: -1;
+   translate: -50% -50%;
+   border-radius: 10px;
+   animation: spins 3s linear infinite;
+   
+  }
+  .our_games3::before{
+   filter: blur(1.5rem);
+   opacity: 0.5;
+  }
+  @keyframes spins {
+   from{
+     --angle: 0deg;
+   }
+   to{
+     --angle: 360deg;
+     
+   }
+  }
+ 
+/* --------------Contact section Start------------------- */
+#parentContact{ 
+  width: 100vw;
+  height: 300px;
+  background: url(../Images/Home/Arcade\ Blue.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  filter: contrast(200%);
+  
+}
+.contactinput{
+  width: 190px;
+  height: 50px;
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  text-shadow: 0px 0px 10px white;
+  font-weight: 500;
+  
+}
+/* -------------------Footer -------------------*/
+#aboutParent{
+
+  height: 400px;
+  background-color: rgb(15, 15, 15);
+
+}
+.aboutLinks{
+  color: white;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+.aboutLinks:hover{
+  color: aqua;
+}
+/* ===================About Page Start================ */
+/* ---------------------banner------------------------ */
+#parentBanner{
+  width: 100%;
+  height: 40vh;
+  margin: 0;
+ display: flex;
+ flex-direction: column; 
+background: url(./Images/Home/w09415_-_small.webp);
+background-size: 100% 150%;
+background-repeat: no-repeat;
+
+}
+
+#parentBanner h1{
+  font-weight: 1000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+
+  
+}
+#parentBanner a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px cyan,
+  0px 0px 20px cyan,
+  0px 0px 40px cyan,
+  0px 0px 80px cyan;
+ 
+  
+}
+#parentBanner b{
+  color: white ;
+}
+
+/* --------------Logo------------- */
+.game{
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border: 1px solid aqua;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px cyan,
+  0px 0px 20px cyan;
+  overflow: hidden;
+
+  
+}
+#gamePad{
+  font-size: 50px;
+  color: aqua;
+}
+#windows{
+  font-size: 50px;
+  color: aqua;
+}
+#rocket{
+  font-size: 50px;
+  color: aqua;
+}
+/* =========================Contact Start============================ */
+#parentBannerContact{
+  width: 100%;
+  height: 40vh;
+  margin: 0;
+  display: flex;
+ flex-direction: column; 
+ box-shadow: 0px 0px 10px white;
+background: url(./Images/Home/w09415_-_small.webp);
+background-size: 200% 150%;
+background-repeat: no-repeat;
+animation: contact 40s linear infinite alternate;
+}
+@keyframes contact {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 50% 100%;
+  }
+  100%{
+    background-position: 100% 50%;
+  }
+}
+#parentBannerContact h1{
+  font-weight: 1000;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+
+  
+}
+#parentBannerContact a{
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px cyan,
+  0px 0px 20px cyan,
+  0px 0px 40px cyan,
+  0px 0px 80px cyan;
+ 
+  
+}
+#parentBannerContact b{
+  color: white ;
+}
+/* =========================Developer Page Start============================ */
+#imgDevelopers{
+  width: 40vw;
+  height: 50vh;
+  animation: Developers 10s infinite alternate;
+  background: url(./Images/Developers/IMG_0179.jpg);
+  background-size: 100% 100%;
+  
+}
+@keyframes Developers {
+  0%{
+    
+  }
+  
+    
+    25%{
+     
+  
+      
+    }
+    50%{
+      
+    }
+    75%{
+      transform: rotateY(180deg);
+      background: url(./Images/Developers/IMG_0179.jpg);
+      background-position: center;
+      background-size: 100% 100%;
+      
+      
+    }
+    100%{
+     
+      background: url(./Images/Developers/Shayan.jpg);
+      background-position: center;
+      background-size: 100% 100%;
+      
+    }
+  }
+  /* ===================Gaming Store================== */
+  #parentBannerGame{
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    display: flex;
+   flex-direction: column; 
+   box-shadow: 0px 0px 10px white;
+   background: url(./Images/Game_store/gaming-banner-sonyps4-1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+    
+  }
+   #parentBannerGame h1{
+     font-weight: 1000;
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+    
+   
+     
+   }
+   #parentBannerGame a{
+     text-decoration: none;
+     color: white;
+     font-weight: 700;
+     text-shadow: 0px 0px 10px cyan,
+     0px 0px 20px cyan,
+     0px 0px 40px cyan,
+     0px 0px 80px cyan;
+    
+     
+   }
+   #parentBannerGame b{
+     color: white ;
+   }
+   #GameCard1{
+    position: relative;
+    transition: all 0.5s;
+   }
+   @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+   }
+   #GameCard1::after, #GameCard1::before{
+    content: '';
+    position: absolute;
+    height: 101%;
+    width: 103%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, rgb(4, 63, 189) , white );
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    translate: -50% -50%;
+    border-radius: 10px;
+    animation: spin 3s linear infinite;
+    
+   }
+   #GameCard1::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+   }
+   @keyframes spin {
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+      
+    }
+   }
+
+  #GameCard1:hover{
+    
+    transform: scale(1.04);
+  }
+  /* ------------Space Wars Details---------------- */
+  #parentBannerSpaceWars{
+    width: 100vw;
+    height: 40vh;
+    margin: 0;
+    display: flex;
+   flex-direction: column; 
+   box-shadow: 0px 0px 10px white;
+   background: url(./Images/Game_store/Banners/Space\ Wars\ Banner.jpg);
+   background-size: 100% 100%;
+ 
+    background-repeat: no-repeat;
+    
+  }
+  #parentBannerSpaceWars h1{
+    font-weight: 1000;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+   
+  
+    
+  }
+  #parentBannerSpaceWars a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px cyan,
+    0px 0px 20px cyan,
+    0px 0px 40px cyan,
+    0px 0px 80px cyan;
+   
+    
+  }
+  #parentBannerSpaceWars b{
+    color: white ;
+  }
+  .space_card{
+    position: relative;
+    transition: all 0.5s;
+  }
+  @property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+   }
+   .space_card::after, .space_card::before{
+    content: '';
+    position: absolute;
+    height: 101%;
+    width: 103%;
+    background-image: conic-gradient(from var(--angle), transparent 70%, rgb(4, 63, 189) , white );
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    translate: -50% -50%;
+    border-radius: 10px;
+    animation: spin1 3s linear infinite;
+    
+   }
+   .space_card::before{
+    filter: blur(1.5rem);
+    opacity: 0.5;
+   }
+   @keyframes spin1 {
+    from{
+      --angle: 0deg;
+    }
+    to{
+      --angle: 360deg;
+      
+    }
+   }
+     /* ------------Egypt And World Details---------------- */
+    #parentBannerEgypt{
+      width: 100vw;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+     flex-direction: column; 
+     box-shadow: 0px 0px 10px white;
+     background: url(./Images/Game_store/Banners/Egypt\ and\ World.jpg);
+     background-size: 100% 100%;
+   
+      background-repeat: no-repeat;
+      
+    }
+    #parentBannerEgypt h1{
+      font-weight: 1000;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;     
+    }
+    #parentBannerEgypt a{
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      text-shadow: 0px 0px 10px cyan,
+      0px 0px 20px cyan,
+      0px 0px 40px cyan,
+      0px 0px 80px cyan;
+     
+      
+    }
+    #parentBannerEgypt b{
+      color: white ;
+    }
+     /* ------------Banner Soccer Details---------------- */
+    #parentBannerSoccer{
+      width: 100vw;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+     flex-direction: column; 
+     box-shadow: 0px 0px 10px white;
+     background: url(./Images/Game_store/Banners/fifa-18-page-banner.jpg);
+     background-size: 100% 100%;
+   
+      background-repeat: no-repeat;
+      
+    }
+    #parentBannerSoccer h1{
+      font-weight: 1000;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;     
+    }
+    #parentBannerSoccer a{
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      text-shadow: 0px 0px 10px cyan,
+      0px 0px 20px cyan,
+      0px 0px 40px cyan,
+      0px 0px 80px cyan;
+     
+      
+    }
+    #parentBannerSoccer b{
+      color: white ;
+    }
+     /* ------------Life And Struggle Details---------------- */
+    #parentBannerLife{
+      width: 100vw;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+     flex-direction: column; 
+     box-shadow: 0px 0px 10px white;
+     background: url(./Images/Game_store/Banners/gta-page-banner.jpg);
+     background-size: 100% 100%;
+   
+      background-repeat: no-repeat;
+      
+    }
+    #parentBannerLife h1{
+      font-weight: 1000;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;     
+    }
+    #parentBannerLife a{
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      text-shadow: 0px 0px 10px cyan,
+      0px 0px 20px cyan,
+      0px 0px 40px cyan,
+      0px 0px 80px cyan;
+     
+      
+    }
+    #parentBannerLife b{
+      color: white ;
+    }
+     /* ------------Planes of Gloria Details---------------- */
+    #parentBannerPlanes{
+      width: 100vw;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+     flex-direction: column; 
+     box-shadow: 0px 0px 10px white;
+     background: url(./Images/Game_store/Banners/ww-page-banner.jpg);
+     background-size: 100% 100%;
+   
+      background-repeat: no-repeat;
+      
+    }
+    #parentBannerPlanes h1{
+      font-weight: 1000;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;     
+    }
+    #parentBannerPlanes a{
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      text-shadow: 0px 0px 10px cyan,
+      0px 0px 20px cyan,
+      0px 0px 40px cyan,
+      0px 0px 80px cyan;
+     
+      
+    }
+    #parentBannerPlanes b{
+      color: white ;
+    }
+     /* ------------Returns of the car Details---------------- */
+    #parentBannerReturns{
+      width: 100vw;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+     flex-direction: column; 
+     box-shadow: 0px 0px 10px white;
+     background: url(./Images/Game_store/Banners/nfs-page-banner.jpg);
+     background-size: 100% 100%;
+   
+      background-repeat: no-repeat;
+      
+    }
+    #parentBannerReturns h1{
+      font-weight: 1000;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;     
+    }
+    #parentBannerReturns a{
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      text-shadow: 0px 0px 10px cyan,
+      0px 0px 20px cyan,
+      0px 0px 40px cyan,
+      0px 0px 80px cyan;
+     
+      
+    }
+    #parentBannerReturns b{
+      color: white ;
+    }
+     /* ------------The Warrior Details---------------- */
+    #parentBannerWarrior{
+      width: 100vw;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+     flex-direction: column; 
+     box-shadow: 0px 0px 10px white;
+     background: url(./Images/Game_store/Banners/tw-bg-1920x450.jpg);
+     background-size: 100% 100%;
+   
+      background-repeat: no-repeat;
+      
+    }
+    #parentBannerWarrior h1{
+      font-weight: 1000;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;     
+    }
+    #parentBannerWarrior a{
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      text-shadow: 0px 0px 10px cyan,
+      0px 0px 20px cyan,
+      0px 0px 40px cyan,
+      0px 0px 80px cyan;
+     
+      
+    }
+    #parentBannerWarrior b{
+      color: white ;
+    }
+     /* ------------Earth Wars : history Details---------------- */
+    #parentBannerEarths{
+      width: 100vw;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+     flex-direction: column; 
+     box-shadow: 0px 0px 10px white;
+     background: url(./Images/Game_store/Banners/tw-bg-1920x450.jpg);
+     background-size: 100% 100%;
+   
+      background-repeat: no-repeat;
+      
+    }
+    #parentBannerEarths h1{
+      font-weight: 1000;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;     
+    }
+    #parentBannerEarths a{
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      text-shadow: 0px 0px 10px cyan,
+      0px 0px 20px cyan,
+      0px 0px 40px cyan,
+      0px 0px 80px cyan;
+     
+      
+    }
+    #parentBannerEarths b{
+      color: white ;
+    }
+    /* -------------------Gaming Product-------------- */
+    .space_card1{
+      position: relative;
+      transition: all 0.5s;
+    }
+    @property --angle{
+      syntax: "<angle>";
+      initial-value: 0deg;
+      inherits: false;
+     }
+     .space_card1::after, .space_card1::before{
+      content: '';
+      position: absolute;
+      height: 101%;
+      width: 103%;
+      background-image: conic-gradient(from var(--angle), transparent 70%, rgb(4, 63, 189) , rgb(255, 0, 0),  yellow, green,gray );
+      top: 50%;
+      left: 50%;
+      z-index: -1;
+      translate: -50% -50%;
+      border-radius: 10px;
+      animation: spin2 3s linear infinite;
+      
+     }
+     .space_card1::before{
+      filter: blur(1.5rem);
+      opacity: 0.5;
+     }
+     @keyframes spin2 {
+      from{
+        --angle: 0deg;
+      }
+      to{
+        --angle: 360deg;
+        
+      }
+     }
+     /* -----------------Detailing Page-------------------------- */
+     .parentBannerDetail{
+      width: 100%;
+      height: 40vh;
+      margin: 0;
+      display: flex;
+     flex-direction: column; 
+     box-shadow: 0px 0px 10px white;
+     background: url(../Images/banner.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+    .parentBannerDetail h1{
+      font-weight: 1000;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;     
+    }
+    .parentBannerDetail a{
+      text-decoration: none;
+      color: white;
+      font-weight: 700;
+      text-shadow: 0px 0px 10px cyan,
+      0px 0px 20px cyan,
+      0px 0px 40px cyan,
+      0px 0px 80px cyan;
+     
+      
+    }
+    .parentBannerDetail b{
+      color: white ;
+    }
+    /* Fire particle animation for flame trail */
+    .fire-trail {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url(./Images/cursor.png);
+      background-size: 100%;
+      background-position: center;     
+      box-shadow: 0px 0px 10px rgb(1, 175, 255);
+      border-radius: 50%;     
+      pointer-events: none;
+      opacity: 0;
+      animation: flame-flicker 0.5s forwards;
+      z-index: 1;
+    }
+
+    @keyframes flame-flicker {
+      0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+      }
+      50% {
+        opacity: 0.7;
+        transform: translate(0, -10px) scale(1.2);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(0, -20px) scale(1.5);
+      }
+    }
+
+    /* Cursor flickering effect */
+    @keyframes flicker {
+      0% {
+        opacity: 1;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 0.7;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 0.6;
+        transform: scale(1.2);
+      }
+    }

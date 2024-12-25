@@ -1,0 +1,68 @@
+@media  (min-width: 0px) And (max-width: 990px) {
+  body{
+    overflow-x: hidden;
+  }
+    /* ---------nav-------- */
+    #navbarNavDropdown{
+        width: 100vw;
+        background: url(../../Images/Home/w09415_-_small.webp);
+        background-position: center;
+        background-size: 100% 70%;
+        border-radius: 5px;
+        padding-left: 10px;
+        animation: moving 5s linear  infinite alternate ;
+    }
+    @keyframes moving {
+        0%{
+          background-position: 0% 50%;
+        }
+        50%{
+          background-position: 50% 100%;
+        }
+        100%{
+          background-position: 100% 50%;
+        }
+      }
+    /* ---------card------- */
+    #cardParent {
+        width: 100vw;
+        height: 1800px;
+    }
+     
+    /* -----Contact----- */
+    #parentContact{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    /* -----Footer----- */
+    #aboutParent{
+      margin: 0;
+      padding: 30px;
+      width: 100%;
+        height: 880px;
+       display: flex;
+  
+    }
+ /* ===============Developer============ */
+ #imgDevelopers{
+  width: 100%;
+  height: 500px;
+ }
+}
+/* ============Games Banner========= */
+
+/* ============================New Screen================================= */
+@media  (min-width: 0px) And (max-width: 766px) {
+#parentBanner div{
+ 
+
+  height: 10vh;
+
+ font-size: 10px;
+
+}
+
+}
